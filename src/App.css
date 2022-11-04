@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+:root{
+  --primary-white: #fff;
+  --primary-gray: rgba(180, 156, 156, 0.568);
+}
+
+body{
+  background-position:left;
+  position: relative;
+  font-family: 'Roboto Condesed' sans-serif;
+  background: url(evolve.jpg) no-repeat  ;
+  background-size: cover;
+  width:auto;
+  height: 500px;
+
+}
+
+/************************NAVBAR*******************************/
+
+nav a.nav-link{
+  letter-spacing: 0.00375rem;
+  cursor:pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.80rem ;
+  margin-left: 0.80rem ;
+  color:var(--primary-white) !important;
+}
+
+.navbar-brand {
+  color:var(--primary-white) !important;
+  font-weight: 1000rem;
+  
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-bottom: 0.1875rem solid var(--primary-white);
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-gray);
+}
+
+/************************HEADER*******************************/
+
+.header-wrapper{
+  font-style: italic ;
+}
+
+.main-info h1{
+  color: 0.1875rem solid var(--primary-gray);
+  text-transform: uppercase;
+}
