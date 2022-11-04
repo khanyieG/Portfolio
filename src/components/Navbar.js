@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className='container'>
-                <span className="navbar-brand">My Portfolio</span>
+                <a className="navbar-brand" href="#">My Portfolio</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -24,7 +24,7 @@ const Navbar = () => {
                             <span className="nav-link">Skills</span>
                         </li>
                         <li className="nav-item">
-                            <span className="nav-link">Why SovTech</span>
+                            <span className="nav-link" href="#">Why SovTech</span>
                         </li>
                     </ul> 
                 </div>
