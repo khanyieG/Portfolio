@@ -1,22 +1,24 @@
 import React from "react";
 
-import LeftAlign from "./UI/LeftAlign";
+import RightAlign from "./UI/RightAlign";
 
 const Skills = () => {
   return (
-    <LeftAlign>
-      <h3 id="skills">Skills</h3>
-      <div className="card">
-        <div className="card-body">
-          <li>Python </li>
-          <li>Java (Object-Oriented-Programming)</li>
-          <li>HTML5 & CSS</li>
-          <li>JavaScript</li>
-          <li>Microsift Office</li>
-          <li>Landscape Photography</li>
+    <RightAlign>
+      <div className="skills" id="Skills">
+        <h3>Skills</h3>
+        <div className="card" >
+          <div className="card-body">
+            <li>Python </li>
+            <li>Java (Object-Oriented-Programming)</li>
+            <li>HTML5 & CSS</li>
+            <li>JavaScript</li>
+            <li>Microsift Office</li>
+            <li>Landscape Photography</li>
+          </div>
         </div>
       </div>
-    </LeftAlign>
+    </RightAlign>
   );
 };
 

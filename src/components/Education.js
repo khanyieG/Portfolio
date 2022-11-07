@@ -1,11 +1,12 @@
 import React from "react";
 
 import RightAlign from "./UI/RightAlign";
+import LeftAlign from "./UI/LeftAlign";
 
 const Education = () => {
   return (
     <RightAlign>
-      <h3>Education</h3>
+      <h3 className="Education" id="Education">Education</h3>
       <div className="card">
         <div className="card-body">
           <span className="avuxen" href="http://avuxeni.co.za/">

@@ -6,8 +6,8 @@ const Header = () => {
     <div id="header" className="container">
       <div className="header-wrapper">
         <div className="left">
-            <div className="Home">
-                <h2>Welcometh To Mine Own Portfolio</h2>
+            <div className="Home" id="Home">
+                <h2>Welcome To My Portfolio</h2>
             </div>
             <div className="main">
                 <img src={picture} alt="Myself" />

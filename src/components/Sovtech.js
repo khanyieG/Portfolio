@@ -1,11 +1,13 @@
 import React from "react";
 
-import RightAlign from "./UI/RightAlign";
+import LeftAlign from "./UI/LeftAlign";
 
 const Sovtech = () => {
   return (
-    <RightAlign>
-      <h3 className="SovTech">Why SovTec ?</h3>
+    <LeftAlign>
+      <h3 className="SovTech" id="SovTech">Why SovTech ?</h3>
+      <br />
+      <br />
       <div className="card">
         <div className="card-body">
           After the conversation I had with the SovTech team at WeThinkCode_
@@ -20,7 +22,7 @@ const Sovtech = () => {
           SovTech.
         </div>
       </div>
-    </RightAlign>
+    </LeftAlign>
   );
 };
 

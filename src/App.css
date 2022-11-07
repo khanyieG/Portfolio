@@ -6,30 +6,8 @@
   --primary-gray: #636e72;
 }
 
-.intro{
-  width:550px;
-}
-.main{
-  width: 1110px;
-  max-width: 95%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around ;
-}
 
-/* .flex {
-  display: flex;
-  width: 100%;
-}
 
-.flex-row {
-  flex-direction: row;
-}
-
-.justify-between {
-  justify-content: space-evenly;
-} */
 
 body{
   background-position:left;
@@ -43,19 +21,30 @@ body{
   
 
 }
+.card:hover{
+  transform: scale(1.5);
+}
 .card{
   width: 30vw;
   margin-left: 50%;
   height:calc(100vh - 50%);
   /* background-color: rgb(155, 9, 111); */
   border-radius:30px !important;
-  box-shadow:#ecf0f1 5px 5px 20px;
+  box-shadow:#ecf0f1 2px 2px 20px;
+  margin-top: 3rem;
 
 }
 .card-body{
   background-color:#b2bec3;
   border-radius:30px !important;
 
+
+}
+
+/**********************about**********************************/
+.About > h3{
+  text-align: center;
+  margin-top: 5rem;
 }
 .about-wrapper{
     display: flex;
@@ -65,6 +54,7 @@ body{
 /********************education*********************************/
 .edu h3{
   text-align: center;
+  margin-top: 5rem;
 }
 .edu-left{
   display: flex;
@@ -84,8 +74,10 @@ body{
 }
 
 /******************************skills**************************/
-.skill h3{
+.skills > h3{
   text-align: center;
+  margin-top: 5rem;
+  margin-right: 5rem;
 }
 
 .skill-wrapper{
@@ -96,23 +88,11 @@ body{
 /***************************sovtec****************************/
 .sovtec h3{
   text-align: center;
+  margin-top: 5rem;
 }
-
-.left-sovtec{
-  display: flex;
-  flex: 0.5;
-  width: 100%;
-  height: 50vh;
-  background-color: aquamarine;
+.SovTech card-body{
+  margin-left: 5rem;
 }
-.right-sovtec{
-  display: flex;
-  flex: 0.5;
-  width: 100%;
-  height: 100vh;
-  
-}
-
 .sovtec-wrapper{
   display: flex;
   width: 100%;
@@ -156,11 +136,49 @@ nav ul li{
 
 .header-wrapper{
   font-style: italic ;
-
+  margin-top: 5rem;
 }
 
 .info-msg h2{
   color: 0.1875rem solid var(--primary-gray);
   text-transform: uppercase;
   
+}
+.intro{
+  width:550px;
+}
+.main{
+  width: 1110px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around ;
+  margin-top: 5rem;
+  
+}
+
+@keyframes float {
+  0% {
+    box-shadow:#ecf0f1 0px 0px 20px;
+    border-radius: 50%;
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow:#ecf0f1 1px 1px 20px;
+    border-radius: 50%;
+    transform: translatey(-20px);
+  }
+
+  100% {
+    border-radius: 50%;
+    transform: translatey(0px);
+  }
+}
+
+img {
+  margin-top: 3rem;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
 }
