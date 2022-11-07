@@ -1,33 +1,29 @@
+import React from "react";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import About from "./components/About";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Sovtec from "./components/Sovtech";
 
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+
 
 function App() {
 
   return (
     <>
-      <Particles
-        params={{
-          particles:{
-            number:{
-              value: 40,
-              density: {
-                enable: true,
-                value_area: 900
-              }
-            }
-          }
-
-        }}>
-      </Particles>
       <Navbar />
-      <Header />  
+      <Header />
+      <About/>
+      <Education/>
+      <Skills/>
+      <Sovtec/>
+     
     </>
+
   );
 }
 

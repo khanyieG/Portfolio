@@ -1,21 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
 
 :root{
   --primary-white: #fff;
-  --primary-gray: rgba(180, 156, 156, 0.568);
+  --primary-gray: #636e72;
 }
+
+.intro{
+  width:550px;
+}
+.main{
+  width: 1110px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around ;
+}
+
+/* .flex {
+  display: flex;
+  width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-evenly;
+} */
 
 body{
   background-position:left;
   position: relative;
   font-family: 'Roboto Condesed' sans-serif;
-  background: url(evolve.jpg) no-repeat  ;
+  /* background: url(evolve.jpg) no-repeat  ; */
+  background-color: var(--primary-gray) !important;
   background-size: cover;
   width:auto;
   height: 500px;
+  
 
 }
+.card{
+  width: 30vw;
+  margin-left: 50%;
+  height:calc(100vh - 50%);
+  /* background-color: rgb(155, 9, 111); */
+  border-radius:30px !important;
+  box-shadow:#ecf0f1 5px 5px 20px;
 
+}
+.card-body{
+  background-color:#b2bec3;
+  border-radius:30px !important;
+
+}
+.about-wrapper{
+    display: flex;
+    width: 100%;
+}
+
+/********************education*********************************/
+.edu h3{
+  text-align: center;
+}
+.edu-left{
+  display: flex;
+  flex: 0.5;
+  width: 100%;
+  height: 10vh;
+}
+.edu-right{
+  display: flex;
+  flex: 0.5;
+  width: 100%;
+  
+}
+.education-wrapper{
+  display: flex;
+  width: 100%;
+}
+
+/******************************skills**************************/
+.skill h3{
+  text-align: center;
+}
+
+.skill-wrapper{
+  display: flex;
+  width: 100%;
+}
+
+/***************************sovtec****************************/
+.sovtec h3{
+  text-align: center;
+}
+
+.left-sovtec{
+  display: flex;
+  flex: 0.5;
+  width: 100%;
+  height: 50vh;
+  background-color: aquamarine;
+}
+.right-sovtec{
+  display: flex;
+  flex: 0.5;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.sovtec-wrapper{
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
 /************************NAVBAR*******************************/
 
 nav a.nav-link{
@@ -51,9 +156,11 @@ nav ul li{
 
 .header-wrapper{
   font-style: italic ;
+
 }
 
-.main-info h1{
+.info-msg h2{
   color: 0.1875rem solid var(--primary-gray);
   text-transform: uppercase;
+  
 }
